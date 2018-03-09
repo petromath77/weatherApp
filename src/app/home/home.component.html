@@ -1,0 +1,27 @@
+<header class="text-center">
+  <h4>Home</h4>
+</header>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 text-center">
+        <div class="info" *ngIf="weather">
+          <h3 class="primary">Location: {{weather.display_location.full}}</h3>
+          <img src="{{weather.icon_url}}" alt="weather">
+          <h5>{{weather.weather}}</h5>
+          <h4>{{weather.temp_c}}&deg;C</h4>
+          <div class="card text-white bg-info text-left">
+              <div class="card-header"><b>More Detail</b></div>
+              <div class="card-body">
+                <p><b>Temperature: </b>{{weather.temp_c}}&deg;C</p> 
+                <hr> 
+                <p><b>Feels Like: </b>{{weather.feelslike_c}}&deg;C</p> 
+                <hr> 
+                <p><b>Relative Humidity: </b>{{weather.relative_humidity}}</p> 
+                <hr> 
+                <p><b>Pressure: </b>{{weather.pressure_mb}} mb</p> 
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+footer a{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+}
+footer a:last-child{
+    margin-right: 0;
+}
+footer a:hover{
+    color: rgb(150, 148, 148);
+    text-decoration: none;
+}

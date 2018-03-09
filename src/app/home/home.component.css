@@ -1,0 +1,14 @@
+.info{
+    color: #fff;
+    margin-top: 20px;
+}
+.info img{
+    width: 80px;
+}
+.card{
+    width: 300px;
+    margin: 40px auto 0px;
+}
+.card p{
+    margin-bottom: 0;
+}

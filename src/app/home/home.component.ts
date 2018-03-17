@@ -7,15 +7,29 @@ import { WeathService } from '../weath.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  location={
-    country: 'belarus',
-    city: 'minsk'
+  location = {
+    country: '',
+    city: ''
   };
   weather:any;
+  value: any;
 
   constructor(private weathService: WeathService) { }
 
+
+ 
+
   ngOnInit() {
+    this.value = localStorage.getItem('location');
+    if(this.value == null){
+      this.location = JSON.parse(this.value);
+    }else{
+      this.location = {
+        country: 'belarus',
+        city: 'minsk'
+      };
+    }
+
     this.weathService.getWeather(this.location.country, this.location.city).subscribe(weather => {
       this.weather = weather.current_observation;
     });

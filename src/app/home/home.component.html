@@ -3,7 +3,7 @@
 </header>
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-6 text-center">
+    <div class="col-10 col-xs-8 col-xs-6 text-center">
         <div class="info" *ngIf="weather">
           <h3 class="primary">Location: {{weather.display_location.full}}</h3>
           <img src="{{weather.icon_url}}" alt="weather">
@@ -21,6 +21,9 @@
                 <p><b>Pressure: </b>{{weather.pressure_mb}} mb</p> 
               </div>
           </div>
+        </div>
+        <div>
+          <h3 *ngIf="!weather">Please, select your city in settings</h3>
         </div>
     </div>
   </div>

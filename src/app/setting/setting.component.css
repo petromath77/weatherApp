@@ -1,0 +1,57 @@
+form{
+    padding: 20px;
+    background-color: #17a2b8;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+form button{
+    background-color: #158496;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+form button:hover{
+    background-color:#107080;
+}
+.form-group label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+.form-control{
+    background-color: transparent;
+}
+.form-group input{
+    color: #fff;
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+@media (max-width: 575.98px) { 
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   .card{
+       width: 100%;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+@media (min-width: 1200px) { 
+    form{
+        width: 70%;
+    }
+}

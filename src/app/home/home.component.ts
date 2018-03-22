@@ -22,12 +22,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.value = localStorage.getItem('location');
     if(this.value == null){
-      this.location = JSON.parse(this.value);
-    }else{
       this.location = {
         country: 'belarus',
         city: 'minsk'
       };
+     
+    }else{
+      this.location = JSON.parse(this.value);
     }
 
     this.weathService.getWeather(this.location.country, this.location.city).subscribe(weather => {

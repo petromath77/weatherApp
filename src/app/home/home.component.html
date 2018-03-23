@@ -22,8 +22,9 @@
               </div>
           </div>
         </div>
-        <div>
-          <h3 *ngIf="!weather">Please, select your city in settings</h3>
+        <div *ngIf="!weather">
+          <h3>Please, select your city in settings</h3>
+          <img src="../../assets/preloader.gif" alt="preloader">
         </div>
     </div>
   </div>

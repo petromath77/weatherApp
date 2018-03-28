@@ -1,8 +1,10 @@
 <router-outlet></router-outlet>
 <footer class="text-center navbar-fixed-bottom">
-    <a routerLink="/home">Home <i class="fas fa-home"></i></a>
-    <a routerLink="/setting">Settings <i class="fas fa-cogs"></i></a>
-    <a routerLink="/about">About <i class="fas fa-question-circle"></i></a>
+    <nav>
+        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home <i class="fas fa-home"></i></a>
+        <a routerLink="/setting" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Settings <i class="fas fa-cogs"></i></a>
+        <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">About <i class="fas fa-question-circle"></i></a>
+    </nav>
 </footer>
 
 

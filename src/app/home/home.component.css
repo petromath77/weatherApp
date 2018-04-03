@@ -17,9 +17,26 @@ h3{
 .caution img{
     width: 100%;
 }
+.card-header{
+    background: #5bc0de;
+}
 @media (max-width: 575.98px) { 
     .card{
         width: 100%;
+        margin: 20px auto 0px;
+    }
+    header{
+        margin-bottom: 30px;
+    }
+    .card-body{
+        padding: 1.0rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    hr{
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
     }
 }
 

@@ -27,13 +27,16 @@ form button:hover{
 }
 .form-group input{
     color: #fff;
+    outline: none;
 }
 ::-webkit-input-placeholder {color:#fff;}
 ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
 :-moz-placeholder           {color:#fff;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#fff;}
 @media (max-width: 575.98px) { 
-
+    h3{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
